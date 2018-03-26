@@ -1,0 +1,338 @@
+* {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+body {
+  font-size: 1em;
+  background: whitesmoke; }
+
+.border {
+  width: 100%;
+  height: 0.5em;
+  background-color: #f43c12;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2; }
+  .border .scrollTop {
+    width: 3em;
+    height: 3em;
+    border-radius: 50% 50%;
+    margin: 0 auto;
+    background-color: #f43c12;
+    display: none;
+    position: relative;
+    transform: translateY(-40%);
+    cursor: pointer; }
+    .border .scrollTop .fa-chevron-up {
+      color: white;
+      font-size: 1.5em;
+      position: absolute;
+      top: 35%;
+      left: 50%;
+      transform: translateX(-50%); }
+      .border .scrollTop .fa-chevron-up:hover {
+        color: black;
+        transition: 500ms; }
+
+nav {
+  width: 100%;
+  font-size: 1.2em;
+  display: none;
+  z-index: 3; }
+  nav li {
+    background-color: #f43c12;
+    border-bottom: 1px solid white;
+    padding: 0.5em 0 0.5em 0.75em;
+    text-transform: uppercase;
+    transition: all 500ms linear;
+    cursor: pointer; }
+    nav li a {
+      text-decoration: none;
+      color: white;
+      font-family: 'Cormorant Garamond', serif; }
+  nav li:last-child {
+    border-bottom: none; }
+
+#hamburger-nav {
+  float: right;
+  padding: 1.25em 1.25em; }
+  #hamburger-nav .fa-bars {
+    color: #f43c12;
+    font-size: 1.75em;
+    transition: all 500ms linear; }
+
+#strona-glowna {
+  width: 100%;
+  padding: 8em 1em 0em 1em;
+  text-align: center;
+  background-image: url("../img/pexels-portrait.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-bottom: 3px solid #f43c12; }
+  #strona-glowna h1 {
+    font-size: 2.7em;
+    color: #f43c12;
+    text-transform: uppercase;
+    line-height: .82;
+    border-bottom: 1px solid black;
+    display: inline-block;
+    z-index: 2;
+    font-family: 'Marcellus SC', serif;
+    -webkit-animation: tracking-in-contract 1200ms cubic-bezier(0.215, 0.61, 0.355, 1) both;
+    animation: tracking-in-contract 1200ms cubic-bezier(0.215, 0.61, 0.355, 1) both; }
+  #strona-glowna h3 {
+    color: white;
+    padding-bottom: 10em;
+    animation: slide 1200ms linear; }
+    #strona-glowna h3 span {
+      font-size: 1.5em; }
+
+#menu {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-bottom: 5em; }
+  #menu h3 {
+    color: #5e666d;
+    padding: 1em 1em;
+    font-size: 1.5em;
+    text-align: center;
+    letter-spacing: 0.75em;
+    font-family: 'Cormorant Garamond', serif; }
+  #menu .food-description {
+    width: 100%;
+    border-top: 1px solid tomato;
+    position: relative; }
+    #menu .food-description .exit {
+      position: absolute;
+      top: 0;
+      right: 1em;
+      display: none;
+      cursor: pointer; }
+    #menu .food-description span {
+      color: tomato;
+      font-weight: bold;
+      font-size: 1.2em;
+      text-shadow: 1px 1px 6px rgba(1, 1, 1, 0.2);
+      float: right; }
+    #menu .food-description p {
+      color: #5e666d;
+      display: inline-block;
+      width: 75%;
+      font-family: 'Cormorant Garamond', serif; }
+    #menu .food-description hr {
+      width: 20%;
+      height: 1px;
+      background-color: tomato;
+      margin: 0.5em auto; }
+  #menu .wrapper {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    position: relative; }
+    #menu .wrapper div {
+      width: 45%;
+      display: inline-block;
+      border-radius: 4px 4px;
+      color: #5e666d;
+      text-align: center;
+      padding: 0.5em 0.5em;
+      margin: 1em 0 0.5em 0;
+      letter-spacing: 1px;
+      font-size: 1.2em;
+      box-shadow: 2px 5px 10px #e4e4e4;
+      background-color: #f2f2f2;
+      font-family: 'Cormorant Garamond', serif;
+      cursor: pointer; }
+      #menu .wrapper div:hover {
+        background-color: #e1e2e2;
+        transition: all 500ms linear; }
+
+#o-nas {
+  width: 100%;
+  font-family: 'Cormorant Garamond', serif;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-bottom: 5em;
+  padding: 0 0em 3em 0.5em; }
+  #o-nas h3 {
+    padding: 1em 1em;
+    font-size: 1.5em;
+    margin: 0 auto;
+    text-align: center;
+    color: #5e666d; }
+  #o-nas .wrapper {
+    position: relative; }
+    #o-nas .wrapper .restaurant-pic {
+      width: 260px;
+      height: 350px;
+      margin: 0 auto;
+      border: 3px solid black;
+      background-image: url("../img/krox.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      margin-bottom: 2em;
+      box-shadow: 0 8px 6px -6px black; }
+    #o-nas .wrapper p {
+      height: 100%;
+      padding: 0 1em 0 1em;
+      color: #5e666d; }
+      #o-nas .wrapper p:first-letter {
+        font-size: 2em;
+        font-weight: 800; }
+
+#contact {
+  width: 100%;
+  background-color: #333738;
+  padding: 2em 0 2em 0; }
+  #contact .wrapper {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 2em 0 2em 0.5em;
+    text-align: center; }
+    #contact .wrapper .godziny-otwarcia h3, #contact .wrapper .kontakt h3 {
+      font-size: 1.4em;
+      color: #f43c12; }
+    #contact .wrapper .godziny-otwarcia p, #contact .wrapper .kontakt p {
+      color: white; }
+      #contact .wrapper .godziny-otwarcia p .fa-phone, #contact .wrapper .godziny-otwarcia p .fa-coffee, #contact .wrapper .godziny-otwarcia p .fa-sun, #contact .wrapper .godziny-otwarcia p .fa-map, #contact .wrapper .kontakt p .fa-phone, #contact .wrapper .kontakt p .fa-coffee, #contact .wrapper .kontakt p .fa-sun, #contact .wrapper .kontakt p .fa-map {
+        margin: 0.2em 0.8em 0 0;
+        font-size: 1.2em; }
+
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background-color: #f43c12; }
+  footer p {
+    padding: 1.5em;
+    color: white;
+    font-family: 'Cormorant Garamond', serif; }
+
+@media (min-width: 320px) and (orientation: landscape) {
+  #o-nas .wrapper {
+    width: 90%;
+    margin: 0 auto; } }
+
+@media (min-width: 740px) {
+  nav {
+    display: block !important;
+    width: 100%;
+    margin: 0 auto;
+    background-image: url("../img/pexels-portrait.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; }
+    nav ul {
+      max-width: 1000px;
+      width: 75%;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      list-style: none; }
+      nav ul li {
+        text-align: center;
+        padding: 2.5em 1em 0.5em 1em;
+        color: white;
+        background-color: transparent;
+        border-bottom: none; }
+      nav ul li:hover {
+        background-color: #f43c12; }
+      nav ul li:first-child {
+        background-color: #f43c12;
+        color: white; }
+  #hamburger-nav {
+    display: none; }
+  #strona-glowna {
+    text-align: center; }
+    #strona-glowna h1 {
+      font-size: 3em; }
+  #menu .food-description p {
+    padding-left: 2em; }
+  #o-nas h3 {
+    font-size: 1.4em; }
+  #o-nas .restaurant-pic {
+    display: inline-block; }
+  #o-nas p {
+    width: 54%;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 1%; }
+  #contact .wrapper {
+    display: flex;
+    justify-content: center;
+    text-align: center; }
+    #contact .wrapper .godziny-otwarcia, #contact .wrapper .kontakt {
+      padding: 0 1em 0 1em; } }
+
+@media (min-width: 1024px) {
+  .border .scrollTop {
+    width: 4em;
+    height: 4em; }
+    .border .scrollTop .fa-chevron-up {
+      font-size: 1.8em; }
+  #strona-glowna {
+    padding: 15em 1em 0em 1em; }
+    #strona-glowna h1 {
+      font-size: 5em; }
+  #menu .food-description p {
+    font-size: 1.4em;
+    padding-left: 2.2em; }
+  #menu .food-description span {
+    font-size: 1.8em; }
+  #menu .wrapper div {
+    width: 30%; }
+  #o-nas h3 {
+    font-size: 1.7em; }
+  #o-nas .wrapper .restaurant-pic {
+    width: 300px;
+    height: 370; }
+  #o-nas p {
+    font-size: 1.2em; }
+  #contact .wrapper .godziny-otwarcia, #contact .wrapper .kontakt {
+    padding: 0 3em 0 3em; }
+    #contact .wrapper .godziny-otwarcia h3, #contact .wrapper .kontakt h3 {
+      font-size: 1.7em; }
+    #contact .wrapper .godziny-otwarcia p, #contact .wrapper .kontakt p {
+      font-size: 1.5em; } }
+
+@-webkit-keyframes tracking-in-contract {
+  0% {
+    letter-spacing: 1em;
+    opacity: 0; }
+  40% {
+    opacity: 0.6; }
+  100% {
+    letter-spacing: normal;
+    opacity: 1; } }
+
+@keyframes tracking-in-contract {
+  0% {
+    letter-spacing: 1em;
+    opacity: 0; }
+  40% {
+    opacity: 0.6; }
+  100% {
+    letter-spacing: normal;
+    opacity: 1; } }
+
+@keyframes slide {
+  from {
+    transform: translateY(10%);
+    opacity: 0; }
+  to {
+    transform: translateY(0%);
+    opacity: 1; } }
